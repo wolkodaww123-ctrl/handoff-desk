@@ -1,0 +1,20 @@
+{
+  "name": "handoff-desk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HandoffDesk: AI support chat with live human handoff, built on the Nexconn Chat SDK (Web) and Nexconn Platform Chat API.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "@nexconn/chat": "26.5.1",
+    "@nexconn/engine": "^26.5.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.2"
+  },
+  "license": "MIT"
+}

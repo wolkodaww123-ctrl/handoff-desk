@@ -1,0 +1,12 @@
+name = "handoff-desk"
+main = "src/worker.js"
+compatibility_date = "2026-11-01"
+
+[ai]
+binding = "AI"
+
+[vars]
+NEXCONN_API_DOMAIN = "api.sg-light-api.com"
+NEXCONN_API_DOMAIN_BACKUP = "api-b.sg-light-api.com"
+# NEXCONN_APP_KEY, NEXCONN_APP_SECRET and DESK_PIN are set as secrets:
+#   wrangler secret put NEXCONN_APP_KEY / NEXCONN_APP_SECRET / DESK_PIN
