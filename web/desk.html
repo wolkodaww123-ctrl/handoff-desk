@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HandoffDesk · staff desk</title><link rel="stylesheet" href="/style.css"></head><body>
+<header><span class="brand">HandoffDesk</span><span class="sub">Staff desk · live visitor chats, AI answers and human takeover</span><span class="status" id="status">signed out</span></header>
+<div class="card gate" id="gate"><form id="login">
+<b>Sign in to the staff desk</b>
+<input type="text" id="name" placeholder="Your name shown to visitors (e.g. Anna)" autocomplete="off">
+<input type="password" id="pin" placeholder="Desk PIN" autocomplete="off">
+<button type="submit">Open desk</button><div class="err" id="err"></div>
+<p class="note">Judges: the demo PIN is in the project write-up.</p></form></div>
+<div class="desk" id="app" hidden>
+<aside class="side" id="list"></aside>
+<section class="card"><div class="top"><b id="title">Pick a conversation</b><button id="take" disabled>Take over from AI</button><button id="archive" class="ghost" disabled>Archive</button></div>
+<div class="log" id="log"></div><div class="typing" id="typing"></div>
+<form class="bar" id="form"><input type="text" id="input" placeholder="Take over to reply yourself" autocomplete="off" disabled><button type="submit">Send</button></form></section>
+</div><script type="module" src="/desk.js"></script></body></html>
